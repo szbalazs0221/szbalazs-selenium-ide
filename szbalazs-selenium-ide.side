@@ -194,10 +194,360 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "ea2b4746-bf0f-4c3f-bcc2-62709763d216",
+    "name": "If else if else",
+    "commands": [{
+      "id": "b971d95f-4c5f-4705-9f38-d96f8cc54ff6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"John\"",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "3225ac60-3030-45d1-b44f-79a2eca432b4",
+      "comment": "",
+      "command": "if",
+      "target": "${name} === \"John\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c61b988f-d623-426f-9f14-a5593f25a301",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"Hello John!\" ",
+      "targets": [],
+      "value": "greeting"
+    }, {
+      "id": "6b3f9e3b-4e26-410a-8913-911e52b1fb0a",
+      "comment": "",
+      "command": "elseIf",
+      "target": "${name} === \"Sarah\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45c6b69b-86c5-4da0-89cd-6f3b24865e1c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"Hello Sarah!\"",
+      "targets": [],
+      "value": "greeting"
+    }, {
+      "id": "edc1ef74-a13c-4807-b6fb-de37bbade3fd",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db28db15-38be-4f92-9c36-abf0279d5ead",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"Hello stranger!\"",
+      "targets": [],
+      "value": "greeting"
+    }, {
+      "id": "b4ef8426-fd2e-4cac-88c6-4b0a9b95e4d3",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0c9dcdb-d680-421d-b0f4-6e5f3d22bddd",
+      "comment": "",
+      "command": "assert",
+      "target": "greeting",
+      "targets": [],
+      "value": "Hello John!"
+    }]
+  }, {
+    "id": "a613748a-b5dc-4eee-8413-e735092ee03a",
+    "name": "Repeat if",
+    "commands": [{
+      "id": "69b1438d-80d9-475c-b7f6-6fed20fe7068",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "66de22d5-e038-4c1d-8ada-e5d3e5fcd749",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "601f989e-81a0-46a6-a0ff-0f6133a8a034",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${i} + 1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "f1db91c8-9835-4621-a988-2d509440145c",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${i} < 10",
+      "targets": [],
+      "value": "11"
+    }, {
+      "id": "438f51db-dee8-4c00-9a42-724f29a27290",
+      "comment": "",
+      "command": "assert",
+      "target": "i",
+      "targets": [],
+      "value": "10"
+    }]
+  }, {
+    "id": "b788f774-29fc-4732-97bb-793841db7ecb",
+    "name": "Times",
+    "commands": [{
+      "id": "29c0ecbd-1eb3-404d-b1e2-7e485cc2d09a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "bb36ee2d-2007-4db2-b25d-e409f17bc950",
+      "comment": "",
+      "command": "times",
+      "target": "5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e862e12e-035f-402c-a436-c2cab8492eb8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${i} + 1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "d7187a9e-9a62-40cf-9620-c9fabf7939dc",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19ebdc7d-9347-44a4-b072-1d725a0697c9",
+      "comment": "",
+      "command": "assert",
+      "target": "i",
+      "targets": [],
+      "value": "5"
+    }]
+  }, {
+    "id": "8bf47bb7-87ac-48c1-8f2d-b130d4a94fb5",
+    "name": "While",
+    "commands": [{
+      "id": "6406f94d-a357-4243-9245-bfed1539bb5d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "9a1c1848-e50e-4b55-9c79-8ccc2254851d",
+      "comment": "",
+      "command": "while",
+      "target": "${i} < 5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d8dd278-be66-4e6d-bafc-39b45412e743",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${i} + 1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "ac41a2ba-dbc5-4660-81dd-2ca2bc005389",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "750e7bbb-15e6-4206-97d4-3e711f97e8b3",
+      "comment": "",
+      "command": "assert",
+      "target": "i",
+      "targets": [],
+      "value": "5"
+    }]
+  }, {
+    "id": "f3adcef1-dae5-46c4-b13f-45482ab94626",
+    "name": "test popup",
+    "commands": [{
+      "id": "b8db203f-70ce-401b-85db-c3f2b20b4019",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc33012d-e2d2-492a-818c-3d3a7a02b77c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1080x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86d71693-60ff-49e8-9feb-939579960278",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Entry Ad",
+      "targets": [
+        ["linkText=Entry Ad", "linkText"],
+        ["css=li:nth-child(15) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Entry Ad')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[15]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/entry_ad')]", "xpath:href"],
+        ["xpath=//li[15]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Entry Ad')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbe15736-582e-42e8-ab17-cc3ecbe67763",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95ab4d8d-9fa3-4155-9f5a-93be31e44c04",
+      "comment": "",
+      "command": "if",
+      "target": "document.querySelectorAll(\"#modal[style='display: block;']\").length === 1",
+      "targets": [
+        ["css=.modal-title > h3", "css:finder"],
+        ["xpath=//div[@id='modal']/div[2]/div/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0f3a154-40b8-437e-b91a-b3bc7e4212b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > p",
+      "targets": [
+        ["css=.modal-footer > p", "css:finder"],
+        ["xpath=//div[@id='modal']/div[2]/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Close')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c092ddd-de82-4d1a-8eb3-ec6d980ec7b6",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "css=.modal",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "addb0a0b-43e2-4a2e-a31c-f5bbf84ff13b",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9553d8a2-861a-43af-a653-65d79c5d62da",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Elemental Selenium",
+      "targets": [
+        ["linkText=Elemental Selenium", "linkText"],
+        ["css=.large-4 a", "css:finder"],
+        ["xpath=//a[contains(text(),'Elemental Selenium')]", "xpath:link"],
+        ["xpath=//div[@id='page-footer']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://elementalselenium.com/']", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Elemental Selenium')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7252",
+      "windowTimeout": 2000
+    }, {
+      "id": "444fe7c5-cb05-49f8-abf0-d55ba1b856b4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7252}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c2856a1-4dc9-4f85-899b-15dd5b936a99",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.subheader:nth-child(3)",
+      "targets": [
+        ["css=.subheader:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sponsored by Sauce Labs')]", "xpath:innerText"]
+      ],
+      "value": "Sponsored by Sauce Labs"
+    }, {
+      "id": "e32687f4-3420-4bed-a4e2-ecba681fd587",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b49e77a9-edbd-4a27-9913-c6a8f854329a",
+    "name": "test remove element",
+    "commands": [{
+      "id": "3fae81e3-613a-44c1-a7a5-19caf3ba3271",
+      "comment": "",
+      "command": "open",
+      "target": "add_remove_elements/9",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5196dcd-714a-4d13-b8bd-4e3657f44875",
+      "comment": "",
+      "command": "while",
+      "target": "document.querySelectorAll('#elements button[onclick=\"deleteElement()\"]').length",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "a24870de-07cf-4cfc-8fa5-4513aaa4d3ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=#elements button[onclick=\"deleteElement()\"]:nth-child(1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72978f1c-ba9d-485c-a5f3-8eea8e886072",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd463411-1608-483e-ac0f-5700056cd088",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=#elements button[onclick=\"deleteElement()\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5c0608e-af5a-4088-8e4e-75b7f5eee5d7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "83aeff3f-97dc-4d80-b228-74fb821e4141",
-    "name": "Test Login Form",
+    "name": "1 Test Login Form",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
@@ -209,6 +559,13 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["ee1ca81a-30e9-4928-8924-8ed289681793"]
+  }, {
+    "id": "3410d41d-cdf5-44e9-af09-6e0c61f423d2",
+    "name": "2 Control Flows",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea2b4746-bf0f-4c3f-bcc2-62709763d216", "a613748a-b5dc-4eee-8413-e735092ee03a", "8bf47bb7-87ac-48c1-8f2d-b130d4a94fb5", "b788f774-29fc-4732-97bb-793841db7ecb", "f3adcef1-dae5-46c4-b13f-45482ab94626", "b49e77a9-edbd-4a27-9913-c6a8f854329a"]
   }],
   "urls": ["https://the-internet.herokuapp.com/"],
   "plugins": []
